@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+width: 30%;
+margin: 100px auto;
+padding: 20px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+  display: flex;
+  flex-direction:  column;
+  padding: 15px;
+}
+form label{
+    margin: 15px 0;
+}
+form input[type="text"]{
+    border: 2px solid purple;
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+}
+form input[type="submit"]{
+
+    border: 2px solid rgb(29, 35, 29);
+    background-color: blue;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    height: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+
+    transform: translateY(-4px);
+
+}
+form a{
+    margin: 10px 0;
+    font-weight: bold;
+    color: black;
+    }
+    .footer .images{
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        margin-top: 15px;
+     }
+     .footer .images img{
+        width: 15% ;
+        border: 1px solid white;
+        transition: 0.3s ease;
+
+        border-radius: 10px;
+        padding: 5px;
+     }
+     :root{
+        --main-color:purple;
+        --box-shadow:0px 3px 5px 0px rgba(0,0,0,0.34);
+        --hover-shadow:0px 4px 4px 0px rgba(3,3,3 ,0.561);
+        --nav-shadow:0px 0px 10px 0px rgba(0,0,0 ,0.100);
+        --light-black:#141c3a;
+    
+    
+    }
+     .footer .images img:hover{
+        box-shadow: var(--hover-shadow);
+        cursor: pointer;
+    }
+
+    footer a{
+        float: right;
+        color: var(--main-color);
+        margin: 10px 0;
+    
+    }
